@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+
+
+    <div class="container">
+        
+        <div class="row align-items-center maincolor" >
+
+            <div class="col-9 navbar " style="text-align: left;">
+                EnUcuzOdaBurada.com
+            </div>
+              
+            <div class="col-3 navbar">
+                <button type="button" onclick="openForm_()" class="btn btn-outline-primary">Sign Up</button>
+                <button type="button"  onclick="openForm()" class="btn btn-outline-primary">Login</button>
+                
+            </div>  
+
+        </div>
+        
+
+        <div class="row align-items-center">
+          
+            <div class="topnav" id="myTopnav">
+
+                <a href="#Konaklama" class="active">Stays</a>
+                <a href="#UçakBiletleri">Flights</a>
+                <a href="#ArabaKiralama">Car Rentals</a>
+                <a href="#Hakkımızda">About Us</a>         
+            </div>
+        </div>
+    
+    </div>
+    <div class="form-popup" id="myForm1">
+      <form name="myForm1" class="w-50 form-container" id="form1" method="post">
+        <h1>Login</h1>
+    
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+    
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+    
+        <button type="submit" class="btn" id="login" onclick="validateForm()">Login</button>
+        <p>Sitemize üye değil misiniz? Hemen  <a href="javascript:Kayit()" id="kayit">Kayıt Olun!</a> </p>
+        <i class="bi bi-x-circle cancel" onclick="closeForm()" style="text-align: center;">X</i>
+        
+      </form>
+    </div>
+
+  
+
+    <div class="form-popup" id="myForm2">
+      <form name="myForm2" class="w-50 form-container" id="form2" method="post">
+        <h1>Sign Up</h1>
+    
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="Name" name="name" required>
+        
+        <label for="Surname"><b>Surname</b></label>
+        <input type="text" placeholder="Surname" name="Surname" required>
+        
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+    
+        <button type="submit" class="btn">Sign Up</button>
+        <p>Sitemize zaten üye misiniz? Hemen  <a href="javascript:GirisYap()" id="giris">Giriş Yapın!</a> </p>
+        <i class="bi bi-x-circle cancel" onclick="closeForm_()" style="text-align: center;">X</i>
+        
+      </form>
+    </div>
+
+    <div class="container maincolor">
+
+        <div class="row main">
+
+            <img src="https://cf.bstatic.com/psb/capla/static/media/black-friday-desktop-m-2x.dceec72e.jpg" class="imgconf">
+            
+            <div class="centered">
+
+                
+              <br> <br>
+                <div class="col" style="font-size: 34px;line-height: 32px;">
+                  Find deals on hotels, homes and much more... <br>  <br>
+                  From cosy country homes to funky city flats 
+                </div>
+                <br> <br>
+              <strong style="font-size: 34px;line-height: 32px;"> Find your next stay <br><br>
+                Search deals on hotels, homes and much more...</strong> 
+            </div>
+
+        </div>
+
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              
+               
+                <input class="form-control mr-sm-2" type="text" name="Location" id="location" placeholder="Where are you going?">              
+                <button type="button" class="maincolor btn btn-primary btn " style="height: 38px;">Search </button>   
+             
+            </div>
+          </nav>
+        
+    </div>
+
+    <div class="container">
+
+      <div class="row searchresult">
+        <div class="col-3">
+          <img class="image" src="photo/divan-istanbul-genel-36849411.jpg" alt="">
+
+        </div>
+
+        <div class="col-9">
+          
+          <div class="row">
+           
+
+            <div class="col-8 text-nowrap">
+
+              <div class="hotelname">
+                Divan İstanbul
+              </div>    
+              <p>Harbiye, Şişli, İstanbul</p>   
+              <div style="margin-top: 8px;" class="hotelinfo">
+                Located right next to Taksim Square and Istiklal Street and you can reach the major 
+                business centers of Istanbul within a short walk, Divan Istanbul is preferred for 
+                historical and cultural trips as well as for business trips with its beautiful location. 
+                The hotel has elegantly decorated rooms combining the West and the East; the famous Divan Restaurant and 
+                Maromi Restaurant, where world-renowned chefs work; Divan Bar and Divan Patisserie, which are important 
+                meeting and event points of the city, also attract a lot of attention. 
+              </div>
+
+            </div>
+
+            <div class="col-4">
+              <button type="button" class="maincolor btn btn-primary" style="margin-top:20%;">
+                See availability <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                  <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"></path>
+                </svg> 
+              </button> 
+            </div>
+          </div>
+         
+
+        </div>
+      </div>
+
+      <div class="row searchresult">
+        <div class="col-3">
+          <img class="image" src="photo/conrad-istanbul-bosphorus-genel-39707897.jpg" alt="">
+
+        </div>
+
+        <div class="col-9">
+          
+          <div class="row">
+           
+
+            <div class="col-8 text-nowrap">
+
+              <div class="hotelname">
+                Conrad Istanbul Bosphorus
+              </div>    
+              <p>Beşiktaş, İstanbul</p>   
+              <div style="margin-top: 8px;" class="hotelinfo">
+                Conrad Istanbul Bosphorus, the right address for those who want 
+                to have a perfect holiday experience in the heart of Istanbul, has 
+                been welcoming its guests since 1992 with its location overlooking the 
+                Bosphorus and its full service. Prioritizing luxury and quality; Equipped with 
+                wide-screen satellite TV, coffee machine, private bathroom and bathroom products, 
+                all of the rooms have been carefully prepared for you to have a more comfortable holiday. 
+                The hotel has a restaurant with a view of the Bosphorus and the historical peninsula.
+              </div>
+
+            </div>
+
+            <div class="col-4">
+              <button type="button" class="maincolor btn btn-primary" style="margin-top:20%;">
+                See availability <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                  <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"></path>
+                </svg> 
+              </button> 
+            </div>
+          </div>
+         
+
+        </div>
+      </div>
+
+      <div class="row searchresult">
+        <div class="col-3">
+          <img class="image" src="photo/RCISNTB_00348_new.jpg" alt="">
+
+        </div>
+
+        <div class="col-9">
+          
+          <div class="row">
+           
+
+            <div class="col-8 text-nowrap">
+
+              <div class="hotelname">
+                The Ritz Carlton İstanbul
+              </div>    
+              <p>Beşiktaş, Şişli, İstanbul</p>   
+              <div style="margin-top: 8px;" class="hotelinfo">
+                “Best Contemporary Luxury Hotel”, “Best Business Hotel” and “Best City Hotel”, “Best Romantic Atmosphere”, “Best Food Presentation/Design” and “Best Food Presentation” The Ritz Carlton Istanbul, which has many awards such as "Beautiful Restaurant Ambience", is in Istanbul Sisli. With a unique Bosphorus view, the hotel has 243 non-smoking rooms. Feather beds, luxury bathrooms decorated with tiles, luxury personal care products, broadband wireless internet network, indoor and outdoor swimming pool, jacuzzi, laptop computer, jewelery safe and housekeeping are offered to you free of charge.
+              </div>
+
+            </div>
+
+            <div class="col-4">
+              <button type="button" class="maincolor btn btn-primary" style="margin-top:20%;">
+                See availability <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                  <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"></path>
+                </svg> 
+              </button> 
+            </div>
+          </div>
+         
+
+        </div>
+      </div>
+    
+    </div>
+
+    <!-- Footer -->
+<footer class="bg text-center text-white maincolor1">
+    <!-- Grid container -->
+    <div class="container p-4">
+  
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+
+            <div class="col-auto">
+                <p class="pt-2">
+                  <strong>Save time and money! </strong>  <br>
+                  
+                  Best deals if you sign up we will send you size   
+                </p>
+              </div>
+          <!--Grid row-->         
+          <div class="row d-flex justify-content-center">
+        
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example21" class="form-control" placeholder="Email address" />
+                <label class="form-label" for="form5Example21"></label>
+              </div>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+  
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+          repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+          eum harum corrupti dicta, aliquam sequi voluptate quas.
+        </p>
+      </section>
+      <!-- Section: Text -->
+  
+      <!-- Section: Links -->
+      <section class="">
+       
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3 maincolor1">
+      © 2021 Copyright:
+      <a class="text-white" href="#">canyilmazenesdemir.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

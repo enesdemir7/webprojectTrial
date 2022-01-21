@@ -1,0 +1,214 @@
+body {
+  
+  background-color: #00224f;
+}
+
+.maincolor{
+  background-color: #003580;
+}
+.maincolor1{
+  background-color: #00224f;
+}
+
+.imgconf{
+  width: 100%;
+  padding: 10px;
+}
+.main{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  text-align: left;
+  top: 30px; 
+}
+.navbar{
+  background-color: #003580;
+  overflow: hidden;
+  color: #f2f2f2;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family:'Times New Roman', Times, serif;
+}
+.topnav {
+    background-color: #003580;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #0071c2;
+    color: white;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #0071c2;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  .navbtn {
+    background: #FFFFFF ;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    color: #003580;
+    font-family: Times New Roman;
+    font-size: 25px;
+    padding: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+ }
+ 
+ .navbtn:hover {
+    background-color: #d9e7fa;
+    color: #0071c2;
+ }
+
+
+ .open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 3;
+  display: none;
+  background-color: rgba(22,22,22,0.5); 
+}
+
+/* Add styles to the form container */
+.form-container {
+  background-color: #a3d7fc;
+  position: relative;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#form1{
+  top: 25%;
+}
+#form2{
+  top: 10%;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px auto;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  
+}
+.cancel:hover{
+  cursor: pointer;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.searchresult{
+  background-color: #ebf3ff;
+  border-color: #a3d7fc;
+  height: 285px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.hotelinfo{
+
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+}
+
+.image{
+  height: 184px;
+  width: 184px;
+  margin-top: 8px;
+}
+
+.hotelname{
+  color: #0071c2;
+  font-size: 28px;
+  font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+}
